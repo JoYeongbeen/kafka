@@ -39,8 +39,7 @@ services:
 
   consumer-app:
     build: ./consumer-app
-    container_name: consumer-app
     environment:
-      - SPRING_PROFILES_ACTIVE=classic
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE:-classic}
     depends_on:
       - kafka

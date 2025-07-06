@@ -2,6 +2,7 @@ spring:
   kafka:
     bootstrap-servers: kafka:9092
     consumer:
+      client-id: ${HOSTNAME}
       auto-offset-reset: earliest
       enable-auto-commit: false
       isolation-level: read_committed
