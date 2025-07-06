@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    consumer:
+      group-id: consumer-group
+      properties:
+        group.protocol: consumer
+        group.remote.assignor: cooperative-sticky
